@@ -34,11 +34,3 @@ The official archive contains 1,561 training pairs, 4 test rows, 7,953 published
 ## Provenance limitation
 
 The final CSV does not preserve complete upstream row-level source identifiers. The repository marks historical row-level source identifiers as `unreconstructed` unless a separate manifest is later added by the authors. The manuscript must report this limitation plainly.
-
-## Historical AI-assisted step
-
-The historical workflow used Manus for limited duplicate screening and removal of corrupted or non-meaningful English records. The original prompts and logs were not retained. This repository does not present that historical step as reproducible agentic-AI processing; it provides a new deterministic audit instead.
-
-## Data and licensing
-
-The data package contains materials assembled from multiple upstream sources. Do not add a blanket repository license until the source-by-source redistribution audit is complete. Source-specific rights and attribution requirements take precedence.
