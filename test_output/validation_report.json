@@ -1,0 +1,52 @@
+{
+  "input_file": "AkkadNMT_75K_original_eight_column.csv",
+  "input_sha256": "845d7c56ba2fe9273825919e6c7261d31940995f156e9e4b3a9168a6f293c44c",
+  "rows": 75562,
+  "input_columns": [
+    "transliteration",
+    "translation",
+    "trans_len",
+    "transl_len",
+    "trans_words",
+    "transl_words",
+    "len_bin",
+    "ratio"
+  ],
+  "primary_columns": [
+    "row_id",
+    "source_transliteration",
+    "target_translation"
+  ],
+  "metadata_columns": [
+    "row_id",
+    "source_characters",
+    "target_characters",
+    "source_words",
+    "target_words",
+    "target_source_character_ratio",
+    "source_length_bin",
+    "validation_flags",
+    "validation_status",
+    "historical_provenance_status"
+  ],
+  "flagged_rows": 72,
+  "flag_counts": {
+    "doubled_terminal_quote_candidate": 72,
+    "hebrew_script": 1
+  },
+  "exact_duplicate_rows": 0,
+  "unique_source_transliterations": 74420,
+  "unique_target_translations": 47633,
+  "recomputed_field_disagreements": {
+    "trans_len": 35,
+    "transl_len": 174,
+    "trans_words": 0,
+    "transl_words": 0,
+    "len_bin": 61798
+  },
+  "notes": [
+    "The primary release preserves text content after NFC normalization and BOM removal only.",
+    "Potential issues are flagged, not silently deleted, because the historical source context is unavailable.",
+    "Row-level upstream provenance is marked unreconstructed unless source identifiers are supplied separately."
+  ]
+}
